@@ -3,20 +3,22 @@ import './style.css';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
-appDiv.innerHTML = createBoard();
+appDiv.innerHTML = fizzbuzz();
 
-function createBoard() {
-  let board = '';
-  let boardLen = 64; //must be divisible by 8
-  for (let i = 1; i <= boardLen; i++) {
-    if (i % 2 == 0) {
-      board += 'x';
-      if (i % 8 == 0) {
-        board += '<br/>';
-      }
+function fizzbuzz() {
+  let result = '';
+
+  for (let i = 1; i <= 100; i++) {
+    if (i % 15 == 0) {
+      result += 'FizzBuzz';
+    } else if (i % 5 == 0) {
+      result += 'Buzz';
+    } else if (i % 3 == 0) {
+      result += 'Fizz';
     } else {
-      board += '#';
+      result += i.toString();
     }
+    result += '<br/>';
   }
-  return board;
+  return result;
 }

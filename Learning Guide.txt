@@ -6,3 +6,9 @@ My master learning plan as thus:
 3) summarize content with writting in my own words to cement key takeaways
 
 Rinse and Repeat
+
+For testing book code, change folders to only have the js file 
+in them as a module. In the index.js, import the module and call the js file code.
+
+This way specific logic is kept to the named folders and a standardized way of 
+testing the calls is established.

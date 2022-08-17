@@ -6,6 +6,9 @@ const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
 scopeTest();
 
+// "Each local scope can also see all the local scopes that contain it and all scopes
+// can see the global scope." p.44
+
 function scopeTest() {
   let test = 'blah';
   console.log(test);

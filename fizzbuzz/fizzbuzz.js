@@ -1,11 +1,9 @@
 // Import stylesheets
 import './style.css';
 
-// Write Javascript code!
-const appDiv = document.getElementById('app');
-appDiv.innerHTML = fizzbuzz();
+function header() {}
 
-function fizzbuzz() {
+function fizzbuzzf() {
   let board = '';
   let boardLen = 64; //must be divisible by 8
   for (let i = 1; i <= boardLen; i++) {

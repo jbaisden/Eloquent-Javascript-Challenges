@@ -1,9 +1,9 @@
 // Import stylesheets
 import './style.css';
 
-// Write Javascript code!
-const appDiv = document.getElementById('app');
-appDiv.innerHTML = createBoard();
+function header() {
+  return 'Chess Board';
+}
 
 function createBoard() {
   let board = '';
@@ -20,3 +20,5 @@ function createBoard() {
   }
   return board;
 }
+
+export { header, createBoard };

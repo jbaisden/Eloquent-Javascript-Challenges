@@ -1,7 +1,9 @@
 // Import stylesheets
 import './style.css';
 
-function header() {}
+function header() {
+  return 'FIZZBUZZ';
+}
 
 function fizzbuzzf() {
   let board = '';
@@ -18,3 +20,5 @@ function fizzbuzzf() {
   }
   return board;
 }
+
+export { header, fizzbuzzf };

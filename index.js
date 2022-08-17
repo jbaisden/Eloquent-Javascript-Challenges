@@ -1,11 +1,11 @@
 // Import stylesheets
-// import './chessboard/index.js';
-import './fizzbuzz/fizzbuzz.js';
+
+// import { header, fizzbuzzf } from './fizzbuzz/fizzbuzz.js';
+import { header, createBoard } from './chessboard/index.js';
 
 // Write Javascript code!
-// const appDiv = document.getElementById('app');
-// appDiv.innerHTML = fizzbuzz();
+const headerh1 = document.getElementById('header');
+headerh1.innerHTML = header();
 
-// Write Javascript code!
 const appDiv = document.getElementById('app');
-appDiv.innerHTML = fizzbuzzf();
+appDiv.innerHTML = createBoard();

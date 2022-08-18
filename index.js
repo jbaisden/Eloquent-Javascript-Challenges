@@ -7,5 +7,6 @@ import { header, createBoard } from './chessboard/index.js';
 const headerh1 = document.getElementById('header');
 headerh1.innerHTML = header();
 
+// import './chessboard/index.js';
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = createBoard();
